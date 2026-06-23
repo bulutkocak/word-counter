@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Word Counter</h1>
+            <p>Count words, characters, and reading time in your texts</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number" id="wordCount">0</span>
+                <span class="stat-label">Words</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="charCount">0</span>
+                <span class="stat-label">Characters</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="charNoSpace">0</span>
+                <span class="stat-label">Characters (no spaces)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="sentenceCount">0</span>
+                <span class="stat-label">Sentences</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="paragraphCount">0</span>
+                <span class="stat-label">Paragraphs</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="readingTime">0</span>
+                <span class="stat-label">Reading Time (min)</span>
+            </div>
+        </div>
+
+        <div class="text-area-wrapper">
+            <textarea id="textInput" placeholder="Start typing or paste your text here..."></textarea>
+        </div>
+
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <button class="btn btn-clear" onclick="clearText()">Clear</button>
+                <button class="btn btn-copy" onclick="copyText()">Copy</button>
+                <button class="btn btn-export" onclick="exportText()">Export</button>
+            </div>
+            <div class="toolbar-right">
+                <span id="charLimit">0 / 10000</span>
+            </div>
+        </div>
+
+        <div class="extra-info">
+            <div class="keyword-section">
+                <h3>Keyword Density</h3>
+                <div id="keywordDensity">Type something to see keywords...</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>All data stays in your browser. Nothing is sent to any server.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
