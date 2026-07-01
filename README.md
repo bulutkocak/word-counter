@@ -2,10 +2,6 @@
 
 Count words, characters, sentences, and estimated reading time in your texts.
 
-## Live Demo
-
-[View Live Demo](https://w0rd-counter.netlify.app/)
-
 ## Features
 
 - Real-time word counting
